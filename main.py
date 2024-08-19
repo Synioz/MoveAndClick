@@ -24,12 +24,12 @@ def main():
             coords[1].append(pag.position().y)
             if mouse.is_pressed('left'):
                 lm += 1
-                print(f'Debug: Left Clicked Count{lm}')
+                print(f'Debug: Left Clicked Count: {lm}')
                 leftclicked[0].append(coords[0][i])
                 leftclicked[1].append(coords[1][i])
             if mouse.is_pressed('right'):
                 rm += 1
-                print(f'Debug: Right Clicked Count {rm}')
+                print(f'Debug: Right Clicked Count: {rm}')
                 rightclicked[0].append(coords[0][i])
                 rightclicked[1].append(coords[1][i])
             while n <= len(coords[0]):
